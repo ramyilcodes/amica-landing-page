@@ -112,11 +112,7 @@ nav ul li:last-of-type{
 }
 
 section{
-    margin-bottom: 4.4rem
-}
-
-article{
-    margin-bottom: 6.3rem;
+    margin-bottom: 4.4rem;
 }
 
 .hero{
@@ -159,6 +155,7 @@ form{
     flex-wrap: wrap;
     width: 100%;
     text-align: left;
+    margin-top: 3.75rem;
 }
 
 form input{
@@ -180,6 +177,18 @@ button{
 section h2{
     font-weight: 500;
     font-size: 3.4rem;
+    margin-bottom: 3.75rem;
+}
+
+section article{
+    margin-block: 3.75rem;
+}
+
+section article h3{
+    font-size: 2.25rem;
+    font-weight: 500;
+    margin-bottom: 2.5rem;
+    line-height: 3.4rem;
 }
 
 .tryAmica{
@@ -244,4 +253,27 @@ section .btn{
     font-weight: 500;
     font-size: 2.25rem;
     margin-bottom: 3.2rem;
+}
+
+
+/* Swipers */
+swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }

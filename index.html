@@ -15,10 +15,12 @@
 
     <!-- stylesheet -->
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" /> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style.css">
 
     <!-- imported scripts -->
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
 
     <title>Amica Landing Page</title>
@@ -112,10 +114,48 @@
             </article>
         </section>
 
-        <!-- <section id="features">
+        <!-- features -->
+        <section id="features" class="container">
             <h2>Simplified features just for you!</h2>
-            <article></article>
-        </section> -->
+            <div>
+        <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" navigation="true" space-between="30"
+            centered-slides="true" autoplay-delay="2500" autoplay-disable-on-interaction="false">
+            <swiper-slide>
+                <div>
+                    <h3>Items</h3>
+                    <p>Keep track of all your goods and services by recording all available and unavailable stocks. With Amica, you can also
+                    set reminder to know when your stock is running low.</p>
+                </div>
+                <img src="images/mockup-item.png" alt="">
+            </swiper-slide>
+            <swiper-slide>
+                <div>
+                    <h3>Invoice</h3>
+                    <p>Record and write invoices anywhere and at anytime to keep track of all payments you have made. Amica makes managing
+                    invoices easy.</p>
+                </div>
+                <img src="images/mockup-invoice.png" alt="">
+            </swiper-slide>
+            <swiper-slide>
+                <div>
+                    <h3>Profit and loss</h3>
+                    <p>Amica has made it easy for you to know if your business is growing or not by recording all your income and expenses on a
+                    daily basis.</p>
+                </div>
+                <img src="images/mockup-profit.png" alt="">
+            </swiper-slide>
+            <swiper-slide>
+                <div>
+                    <h3>Customers</h3>
+                    <p>Find your customers and keep track of whether or not he/she is owing you or not all in one place.</p>
+                </div>
+                <img src="images/mockup-customer.png" alt="">
+            </swiper-slide>
+
+        </swiper-container>
+
+    </div>
+        </section>
 
         <!-- Contact -->
         <section id="contact">
@@ -203,5 +243,6 @@
         </article>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
 </body>
 </html>
