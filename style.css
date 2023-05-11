@@ -1,0 +1,247 @@
+:root{
+    --bg-orange: hsla(22, 97%, 52%, 1);
+    --bg-blue: hsla(249, 93%, 37%, 1);
+    --fc-accent: hsla(0, 0%, 100%, 1);
+    --ff-headings: 'Roboto Slab', serif;
+    --ff-body: 'Kanit', sans-serif;
+    --hero-img: url("images/hero-img.svg");
+    --map-img: url("images/Basemap.svg")
+}
+
+/* reset */
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+input, button, textarea, select, a {
+  font: inherit;
+  color: inherit;
+}
+
+/* utility */
+.d-flex{
+    display: flex;
+}
+.gap-1{
+    gap: 1rem;
+}
+.gap-2{
+    gap: 2rem;
+}
+.gap-5{
+    gap: 5rem;
+}
+.d-grid{
+    display: grid;
+}
+.d-block{
+    display:block;
+}
+.jc-center{
+    justify-content: center;
+}
+.jc-between{
+    justify-content: space-between;
+}
+.jc-evenly{
+    justify-content: space-evenly;
+}
+.ai-center{
+    align-items: center;
+}
+.pa-center{
+    place-items: center;
+}
+.fd-row{
+    flex-direction: row;
+}
+.fd-col{
+    flex-direction: column;
+}
+.fd-rowRev{
+    flex-direction: row-reverse;
+}
+.ff-rowWrap{
+    flex-flow: row wrap;
+}
+
+/* general styles */
+body{
+    font-family: var(--ff-body);
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.container{
+    padding-inline: 4.3rem;
+    width: 100vw;
+}
+
+nav ul, footer ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* specifics */
+nav{
+    padding-block: 1.6rem;
+}
+
+nav ul li{
+    padding-inline: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+nav ul li:hover{
+    border-bottom:1.5px solid black;
+    transition: 0.5s;
+}
+
+nav ul li:last-of-type{
+    border: none;
+}
+
+section{
+    margin-bottom: 4.4rem
+}
+
+article{
+    margin-bottom: 6.3rem;
+}
+
+.hero{
+    background: var(--hero-img);
+    background-size: cover;
+    text-align: left;
+    width: 100%;
+    height: 47.6rem;
+    padding-right: 45.5rem;
+    padding-top: 12.9rem;
+    font-weight: 500;
+}
+
+.hero, footer{
+    color: var(--fc-accent)
+}
+
+.hero h1, .tryAmica h2{
+    font-family: var(--ff-headings);
+}
+
+.btn{
+    color: var(--fc-accent);
+    background-color: var(--bg-blue);
+    padding: 0.5rem 1.7rem;
+    border-radius: 0.625rem;
+}
+
+.btn:hover{
+    background-color: var(--bg-orange);
+    border: none;
+}
+
+.map{
+    width: 100vw;
+    height: 30.3rem;
+}
+
+form{
+    flex-wrap: wrap;
+    width: 100%;
+    text-align: left;
+}
+
+form input{
+    width: 36.4rem;
+    height: 4.6rem;
+}
+
+form input, form textarea{
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: 1px 1px 7px 1px rgba(0, 0, 0, 0.21);
+    padding-inline: 2rem;
+}
+
+button{
+    border: none;
+}
+
+section h2{
+    font-weight: 500;
+    font-size: 3.4rem;
+}
+
+.tryAmica{
+    background: url("images/try-amica.jpg");
+    background-size: cover;
+    width: 49.7rem;
+    height: 24.4rem;
+    color: var(--fc-accent);
+    border-radius: 0 4.5rem 0 4.5rem;
+    text-align: left;
+    padding-left: 23rem;
+    padding-top: 5.6rem;
+    margin-block: 3.75rem;
+}
+
+footer{
+    text-align: left;
+    grid-template-columns: 43% auto;
+}
+
+footer article:first-of-type{
+    background-color: var(--bg-orange);
+    padding-inline: 10.4rem;
+    padding-block: 5.6rem;
+}
+
+footer article:last-of-type{
+    background-color: var(--bg-blue);
+    padding-inline: 6.4rem;
+    padding-block: 5.3rem;
+}
+
+footer a{
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+footer a:hover{
+    font-size: 1.01rem;
+    color: rgb(76, 206, 178);
+}
+
+section .btn{
+    margin-top: 3.2rem;
+}
+
+.hero h1{
+    margin-bottom: 2rem;
+    width: 37.5rem;
+    font-weight: 500;
+    font-size: 3.4rem;
+}
+
+.hero p{
+    width: 32.2rem;
+    font-weight: 300;
+    font-size: 1.5rem;
+    margin-bottom: 3.1rem;
+}
+
+.tryAmica h2{
+    font-weight: 500;
+    font-size: 2.25rem;
+    margin-bottom: 3.2rem;
+}
