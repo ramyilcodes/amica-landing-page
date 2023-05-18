@@ -4,8 +4,7 @@
     --fc-accent: hsla(0, 0%, 100%, 1);
     --ff-headings: 'Roboto Slab', serif;
     --ff-body: 'Kanit', sans-serif;
-    --hero-img: url("images/hero-img.svg");
-    --map-img: url("images/Basemap.svg")
+    --hero-img: url("images/hero-img.png");
 }
 
 /* reset */
