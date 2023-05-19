@@ -197,8 +197,9 @@ section article h3{
 }
 
 .tryAmica{
-    background: linear-gradient(rgba(0, 0 , 0, 0.5), rgba(0, 0 , 0, 0.5)), url("images/try-amica.jpg");
+    background: linear-gradient(rgba(0, 0 , 0, 0.5), rgba(0, 0 , 0, 0.5)), url("images/try-amica.png");
     background-size: cover;
+    background-position: center ;
     width: 49.7rem;
     height: 24.4rem;
     color: var(--fc-accent);
